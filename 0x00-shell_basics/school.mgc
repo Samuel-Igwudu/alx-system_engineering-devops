@@ -1,4 +1,1 @@
-#!/bin/bash
-file -C -m school
-file -i -m school *
-file -m school.mgc*
+file -i -m school.mgc *
