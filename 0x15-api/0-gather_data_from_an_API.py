@@ -12,8 +12,8 @@ if __name__ == "__main__":
     json_f = res.json()
     print("Employee {} is done with tasks".format(json_f.get('name')), end="")
 
-    todos = '{}todos?serId={}'.format(url, sys.argv[1])
-    res = requests.get(todos)
+    todo = '{}todos?userId={}'.format(url, sys.argv[1])
+    res = requests.get(todo)
     tasks = res.json()
     NO_task = []
     for task in tasks:
